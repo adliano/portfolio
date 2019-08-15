@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom'
-import { Container, Jumbotron } from 'react-bootstrap'
 import { MyNavbar } from './components'
+import { Home, Projects } from './pages'
 import './App.css';
 
 function App() {
@@ -9,11 +9,8 @@ function App() {
     <>
       <BrowserRouter>
         <MyNavbar />
-        <Container>
-          <Jumbotron fluid>
-            <h1 className="text-center"> My Header here</h1>
-          </Jumbotron>
-        </Container>
+        <Route exact path='/' component={Home}/>
+        <Route exact path='/projects' component={Projects}/>
       </BrowserRouter>
     </>
   );
