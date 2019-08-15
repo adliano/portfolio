@@ -15,7 +15,7 @@ export class CustomToggle extends Component {
     render() {
       return (
         <Nav onClick={this.handleClick}>
-          <Nav.Link>
+          <Nav.Link className="Link">
           {this.props.children}
           </Nav.Link>
         </Nav>

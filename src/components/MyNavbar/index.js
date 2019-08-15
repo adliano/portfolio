@@ -2,6 +2,7 @@ import React from 'react'
 import { Dropdown, Nav, Navbar, } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { CustomToggle } from '../CustomToggle'
+import './style.css'
 
 export function MyNavbar() {
   return (
@@ -11,10 +12,16 @@ export function MyNavbar() {
         <Navbar.Toggle aria-controls="responsive-links" />
         <Navbar.Collapse id="responsive-links">
           <Nav className="ml-auto">
-            <Dropdown>
+            <Nav.Link>
+              <Link to="/" className="Link">About</Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link to="/projects" className="Link">Projects</Link>
+            </Nav.Link>
+            <Dropdown alignRight>
               <Dropdown.Toggle as={CustomToggle}>
                 Contact
-            </Dropdown.Toggle>
+              </Dropdown.Toggle>
               <Dropdown.Menu>
                 <Dropdown.Item>Liknedin</Dropdown.Item>
                 <Dropdown.Item>Github</Dropdown.Item>
@@ -23,12 +30,6 @@ export function MyNavbar() {
                 <Dropdown.Item>Resume</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
-            <Nav.Link>
-              <Link to="/">About</Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link to="/projects">Projects</Link>
-            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -4,7 +4,7 @@ import { Container, Jumbotron } from 'react-bootstrap'
 export function Projects() {
   return (
     <>
-      <Container>
+      <Container className='my-3'>
         <Jumbotron fluid>
           <h1 className="text-center">List of Projects</h1>
         </Jumbotron>
