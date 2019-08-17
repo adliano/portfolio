@@ -2,13 +2,17 @@ import React from 'react'
 import { Dropdown, Nav, Navbar, } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { CustomToggle } from '../CustomToggle'
+import Avatar from '@atlaskit/avatar';
 import './style.css'
 
 export function MyNavbar() {
   return (
     <>
       <Navbar bg='dark' variant='dark' expand="lg">
-        <Navbar.Brand>Adriano Alves</Navbar.Brand>
+        <Navbar.Brand>
+        <Avatar name="large" size="large" />
+          Adriano Alves
+          </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-links" />
         <Navbar.Collapse id="responsive-links">
           <Nav className="ml-auto">
