@@ -1,18 +1,17 @@
 import React from 'react'
-import { Dropdown, Nav, Navbar, } from 'react-bootstrap'
+import { Dropdown, Image, Nav, Navbar, } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { CustomToggle } from '../CustomToggle'
-import Avatar from '@atlaskit/avatar';
 import './style.css'
 
 export function MyNavbar() {
   return (
     <>
       <Navbar bg='dark' variant='dark' expand="lg">
+        <Image className="mr-2" src="./assets/images/alves.jpeg" width='40rem' roundedCircle/>
         <Navbar.Brand>
-        <Avatar name="large" size="large" />
           Adriano Alves
-          </Navbar.Brand>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-links" />
         <Navbar.Collapse id="responsive-links">
           <Nav className="ml-auto">
@@ -27,8 +26,8 @@ export function MyNavbar() {
                 Contact
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item>Liknedin</Dropdown.Item>
-                <Dropdown.Item>Github</Dropdown.Item>
+                <Dropdown.Item href="https://www.linkedin.com/in/adliano/">Liknedin</Dropdown.Item>
+                <Dropdown.Item href="https://github.com/adliano">Github</Dropdown.Item>
                 <Dropdown.Item>adliano@me.com</Dropdown.Item>
                 <Dropdown.Item>(510)750-0013</Dropdown.Item>
                 <Dropdown.Item>Resume</Dropdown.Item>
