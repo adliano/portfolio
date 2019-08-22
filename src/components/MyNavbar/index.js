@@ -2,6 +2,7 @@ import React from 'react'
 import { Dropdown, Image, Nav, Navbar, } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { CustomToggle } from '../CustomToggle'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './style.css'
 
 export function MyNavbar() {
@@ -24,11 +25,11 @@ export function MyNavbar() {
                 <span className="text-light">Contact</span>
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item href="https://www.linkedin.com/in/adliano/">Liknedin</Dropdown.Item>
-                <Dropdown.Item href="https://github.com/adliano">Github</Dropdown.Item>
-                <Dropdown.Item>adliano@me.com</Dropdown.Item>
-                <Dropdown.Item>(510)750-0013</Dropdown.Item>
-                <Dropdown.Item>Resume</Dropdown.Item>
+                <Dropdown.Item href="https://www.linkedin.com/in/adliano/"> <FontAwesomeIcon icon={['fab', 'linkedin']} /> Liknedin</Dropdown.Item>
+                <Dropdown.Item href="https://github.com/adliano"> <FontAwesomeIcon icon={['fab', 'github-square']} /> Github</Dropdown.Item>
+                <Dropdown.Item> <FontAwesomeIcon icon={['fas', 'at']} /> adliano@me.com</Dropdown.Item>
+                <Dropdown.Item> <FontAwesomeIcon icon={['fas', 'phone-square-alt']} /> (510)750-0013</Dropdown.Item>
+                <Dropdown.Item> <FontAwesomeIcon icon={['fas', 'file-download']} /> Resume</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </Nav>
