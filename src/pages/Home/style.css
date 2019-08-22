@@ -1,8 +1,9 @@
-html, body{
+.bgImage {
     height: 100%;
-  }
-
-body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
     background-image: url("/assets/images/upsidedown.jpg");
     background-position: center center;
     background-attachment: fixed;
@@ -15,5 +16,6 @@ body {
 }
 
 .jumbotron {
-    background: none
+    background: none;
+    /* background:rgba(204, 204, 204, 0.1); */
 }
