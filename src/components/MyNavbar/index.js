@@ -10,12 +10,14 @@ export function MyNavbar() {
     <>
       <Navbar bg='dark' variant='dark' expand="lg">
         <Image className="mr-2" src="./assets/images/alves.jpeg" width='40rem' roundedCircle/>
-        <Navbar.Brand>Adriano Alves</Navbar.Brand>
+        <Navbar.Brand>
+          <Link className="text-light" to='/'>Adriano Alves</Link>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-links" />
         <Navbar.Collapse id="responsive-links">
           <Nav className="ml-auto">
             <Nav.Link>
-              <Link to="/" className="text-light">About</Link>
+              <Link to="/about" className="text-light">About</Link>
             </Nav.Link>
             <Nav.Link>
               <Link to="/projects" className="text-light">Projects</Link>

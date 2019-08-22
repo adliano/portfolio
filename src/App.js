@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom'
 import { MyNavbar } from './components'
-import { Home, Projects } from './pages'
+import { About, Home, Projects } from './pages'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { fas } from '@fortawesome/free-solid-svg-icons'
@@ -15,6 +15,7 @@ function App() {
       <BrowserRouter>
         <MyNavbar />
         <Route exact path='/' component={Home}/>
+        <Route exact path='/about' component={About}/>
         <Route exact path='/projects' component={Projects}/>
       </BrowserRouter>
     </>
