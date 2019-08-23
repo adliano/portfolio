@@ -1,14 +1,19 @@
 import React from 'react'
-import { Container, Jumbotron } from 'react-bootstrap'
+import { Container, Jumbotron, Image, } from 'react-bootstrap'
+import './style.css'
 
-export function About() {
+export function About () {
   return (
     <>
-      <Container className='my-3'>
-        <Jumbotron fluid>
-          <h1 className="text-center">About me</h1>
+      <Container className='mt-4 text-light'>
+        <Jumbotron className='.jubotron'>
+          <h1 className='text-center myName'>Adriano Alves</h1>
         </Jumbotron>
+          <div className="text-center" lg={12} md={1}>
+          <Image className="w-25 myImage" src="/assets/images/alves.jpeg" roundedCircle/>
+          </div>
       </Container>
     </>
   )
 }
+

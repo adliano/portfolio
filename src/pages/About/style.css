@@ -1,0 +1,19 @@
+.jumbotron {
+    background-color: rgba(200, 200, 200, 0.25);
+}
+
+.myImage {
+    position: relative;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    margin: auto;
+    top: -6.5em;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5rem;
+}
+
+.myName {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 6.5vw;
+}
