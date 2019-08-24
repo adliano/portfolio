@@ -1,28 +1,19 @@
-.myImage {
+.box {
     position: relative;
-    /* left: 50%;
-    transform: translateX(-50%); */
-    margin: auto;
-    top: 0.5em;
-    border-style: solid;
-    border-color: black;
-    border-width: 0.5rem;
+}
+
+.box .greeting {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 10%;
+    text-align: left;
+    width: 60%;
 }
 
 .myName {
     font-family: 'Permanent Marker', cursive;
     font-size: 6vw;
-}
-
-.bgFade {
-    background-color: rgba(200, 200, 200, 0.25);
-}
-
-.gifAnimation {
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: fixed;
-    background-image: url('https://media.giphy.com/media/1oF1KAEYvmXBMo6uTS/giphy.gif');
 }
