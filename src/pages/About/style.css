@@ -14,12 +14,18 @@
     height: 80%;
 }
 
-.box .laptop{
+/* .box .laptop{
     z-index: -1;
-}
+} */
 
 .myName {
     font-family: 'Permanent Marker', cursive;
     font-size: 6vw;
+}
+
+@media (max-width: 1200px){
+    .box{
+        color: red;
+    }
 }
 
