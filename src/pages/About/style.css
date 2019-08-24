@@ -4,16 +4,22 @@
 
 .box .greeting {
     position: absolute;
-    z-index: 999;
-    margin: 0 auto;
+    /* z-index: 1; */
+    margin: auto auto;
     left: 0;
     right: 0;
-    top: 10%;
+    top: 9%;
     text-align: left;
-    width: 60%;
+    width: 75%;
+    height: 80%;
+}
+
+.box .laptop{
+    z-index: -1;
 }
 
 .myName {
     font-family: 'Permanent Marker', cursive;
     font-size: 6vw;
 }
+

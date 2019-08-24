@@ -1,14 +1,29 @@
 import React from 'react'
 import { Container, Image } from 'react-bootstrap'
+import { Fade } from 'react-reveal'
+import Typing from 'react-typing-animation'
+// import { Cursor } from '../../components'
+
 import './style.css'
 
 export function About () {
   return (
     <>
-      <Container className='m-5 mx-auto box'>
-        <Image src='/assets/images/screen_about.png' fluid />
-        <div className='text-light greeting'>
-          <h3>Hi I'm Adriano a computer scientist and mathematics Lover.</h3>
+      <Container className='m-5 mx-auto'>
+        <div className='m-5 mx-auto box'>
+          <Fade duration={500}>
+            <Image src='/assets/images/screen_about.png' fluid />
+          </Fade>
+          <div className='text-white greeting bg-dark px-3'>
+            <Typing startDelay={1000} speed={5}>
+              <h3>
+                Hi I'm Adriano.
+                <br />
+                <Typing.Delay ms={1000} />A full-stack web developer, computer
+                scientist and a mathematics lover.
+              </h3>
+            </Typing>
+          </div>
         </div>
       </Container>
     </>
