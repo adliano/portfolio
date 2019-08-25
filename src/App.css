@@ -37,4 +37,14 @@ html, body{
   }
 }
 
+.follow-me ul {
+  list-style: none;
+  position: fixed;
+  top: calc(50% - (150px/2));
+  display: block;
+  z-index: 1001;
+}
 
+.follow-me li {
+  margin: 6px 0;
+}
