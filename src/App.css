@@ -48,3 +48,21 @@ html, body{
 .follow-me li {
   margin: 6px 0;
 }
+
+@media (max-width: 860px){
+  .follow-me ul {
+      display: flex;
+      position: absolute;
+      bottom: 1%;
+      top: unset;
+  }
+
+  .follow-me li {
+    margin: 0 6px;
+  }
+
+  .spacer {
+    min-height: 100%;
+    position: relative;
+  }
+}

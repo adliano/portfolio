@@ -36,6 +36,7 @@ function App () {
         <Route exact path='/projects' component={Projects} />
       </BrowserRouter>
     </>
+
   )
 }
 
