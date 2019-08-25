@@ -20,10 +20,10 @@ function App () {
             <SocialIcon url='https://github.com/adliano' bgColor='#444' fgColor='fff'/>
           </li>
           <li>
-            <SocialIcon url='https://www.linkedin.com/in/adliano/' />
+            <SocialIcon url='https://www.linkedin.com/in/adliano/' fgColor='fff'/>
           </li>
           <li>
-            <SocialIcon url='https://www.instagram.com/adliano/' />
+          <SocialIcon url='https://www.instagram.com/adliano/' fgColor='fff' bgColor='rgba(0,0,0,0)'className='insta'/>
           </li>
         </ul>
       </div>
