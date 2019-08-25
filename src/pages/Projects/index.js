@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card, CardColumns, Container, Jumbotron } from 'react-bootstrap'
-import { Bounce, Zoom } from 'react-reveal'
+import { Bounce, } from 'react-reveal'
 
 export function Projects () {
   return (
