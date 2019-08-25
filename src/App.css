@@ -53,7 +53,8 @@ html, body{
   .follow-me ul {
       display: flex;
       position: absolute;
-      bottom: 1%;
+      bottom: 5%;
+      right: 5%;
       top: unset;
   }
 
@@ -61,8 +62,4 @@ html, body{
     margin: 0 6px;
   }
 
-  .spacer {
-    min-height: 100%;
-    position: relative;
-  }
 }

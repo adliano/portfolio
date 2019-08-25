@@ -3,6 +3,7 @@
     width: 100%;
     min-width: 386px;
     position: fixed;
+    margin: auto;
     background-image: url("/assets/images/sticker.png");
     background-position: center center;
     background-attachment: fixed;
@@ -13,8 +14,4 @@
 .header {
     font-family: 'Permanent Marker', cursive;
     font-size: 1.5em;
-}
-
-.jumbotron {
-    background: none;
 }

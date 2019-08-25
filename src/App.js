@@ -14,7 +14,6 @@ library.add(fab, fas)
 function App () {
   return (
     <>
-      {/* ************************** */}
       <div className='follow-me'>
         <ul>
           <li>
@@ -28,7 +27,6 @@ function App () {
           </li>
         </ul>
       </div>
-      {/* ************************** */}
       <BrowserRouter>
         <MyNavbar />
         <Route exact path='/' component={Home} />
