@@ -28,7 +28,7 @@ export function About () {
                 <div className='myText'>
                 <h6>
                   I’m excited to start my career in web development, Looking
-                  forward to starting using all t he knowledge I gained during
+                  forward to starting using all the knowledge I gained during
                   these years.
                 </h6>
                 <h6>
