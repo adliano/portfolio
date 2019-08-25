@@ -23,7 +23,9 @@ export function About () {
               </h4>
             </Typing>
             <div>
-              <Typing startDelay={7500} speed={5}>
+              { window.innerWidth > 991 ? console.log('over 1000') : console.log('under 1000')}
+              <Typing startDelay={8000} speed={1}>
+                <div className='myText'>
                 <h6>
                   I’m excited to start my career in web development, Looking
                   forward to starting using all t he knowledge I gained during
@@ -42,6 +44,7 @@ export function About () {
                   also love to help debug problems, because thats the way i
                   learn more.
                 </h6>
+                </div>
               </Typing>
             </div>
           </div>

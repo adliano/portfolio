@@ -1,17 +1,13 @@
 .bgImage {
     height: 100%;
     width: 100%;
+    min-width: 386px;
     position: fixed;
     background-image: url("/assets/images/sticker.png");
-    /* 
-    public/assets/images/sticker.png 
-    public/assets/images/meVillamix.png
-    */
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: auto;
-    /* background-color: black; */
 }
 
 .header {
