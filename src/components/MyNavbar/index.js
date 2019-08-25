@@ -1,5 +1,5 @@
 import React from 'react'
-import { Dropdown, Image, Nav, Navbar, } from 'react-bootstrap'
+import { Dropdown, Image, Nav, Navbar, NavItem } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { CustomToggle } from '../CustomToggle'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,7 +8,7 @@ import './style.css'
 export function MyNavbar() {
   return (
     <>
-      <Navbar bg='dark' variant='dark' expand="lg">
+      <Navbar bg='dark' variant='dark' expand="lg" className='size'>
         <Image className="mr-2" src="./assets/images/alves.jpeg" width='40rem' roundedCircle/>
         <Navbar.Brand>
           <Link className="text-light" to='/'>Adriano Alves</Link>
@@ -16,12 +16,12 @@ export function MyNavbar() {
         <Navbar.Toggle aria-controls="responsive-links" />
         <Navbar.Collapse id="responsive-links">
           <Nav className="ml-auto">
-            <Nav.Link>
+            <NavItem className='m-2'>
               <Link to="/about" className="text-light">About</Link>
-            </Nav.Link>
-            <Nav.Link>
+            </NavItem>
+            <NavItem className='m-2'>
               <Link to="/projects" className="text-light">Projects</Link>
-            </Nav.Link>
+            </NavItem>
             <Dropdown alignRight>
               <Dropdown.Toggle as={CustomToggle}>
                 <span className="text-light">Contact</span>

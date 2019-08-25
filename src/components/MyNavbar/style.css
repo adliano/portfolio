@@ -1,3 +1,7 @@
 .Link {
     color: lightgray;
 }
+
+.size {
+    min-width: 400px;
+}
