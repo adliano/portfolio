@@ -1,8 +1,7 @@
 import React from 'react'
 import { Container, Image } from 'react-bootstrap'
 import { Fade } from 'react-reveal'
-import Typing from 'react-typing-animation'
-
+import Typing from 'react-typing-animation' 
 import './style.css'
 
 export function About () {
@@ -23,27 +22,26 @@ export function About () {
               </h4>
             </Typing>
             <div>
-              { window.innerWidth > 991 ? console.log('over 1000') : console.log('under 1000')}
               <Typing startDelay={8000} speed={1}>
                 <div className='myText'>
-                <h6>
-                  I’m excited to start my career in web development, Looking
-                  forward to starting using all the knowledge I gained during
-                  these years.
-                </h6>
-                <h6>
-                  I'm certified in Android development at City College of San
-                  Francisco and Web development FullStack at Berkeley with
-                  strong knowledge in Java SE, Jave EE, MySQL Database
-                  Administration, Oracle 12C database Administration, Linux
-                  System Administration, Linux Network Administration,
-                  Programming Techniques for XML, Dart, Swift and some C++. I am
-                  an Unix command line lover and strong believe that everything
-                  it's possible until you stop believing that you can do it. I
-                  love to learn new things, ride, travel and drink coffee. I
-                  also love to help debug problems, because thats the way i
-                  learn more.
-                </h6>
+                  <h6>
+                    I’m excited to start my career in web development, Looking
+                    forward to starting using all the knowledge I gained during
+                    these years.
+                  </h6>
+                  <h6>
+                    I'm certified in Android development at City College of San
+                    Francisco and Web development FullStack at Berkeley with
+                    strong knowledge in Java SE, Jave EE, MySQL Database
+                    Administration, Oracle 12C database Administration, Linux
+                    System Administration, Linux Network Administration,
+                    Programming Techniques for XML, Dart, Swift and some C++. I
+                    am an Unix command line lover and strong believe that
+                    everything it's possible until you stop believing that you
+                    can do it. I love to learn new things, ride, travel and
+                    drink coffee. I also love to help debug problems, because
+                    thats the way i learn more.
+                  </h6>
                 </div>
               </Typing>
             </div>
