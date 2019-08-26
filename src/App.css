@@ -51,7 +51,6 @@ html, body{
 
 @media (max-width: 860px){
   .follow-me ul {
-    /* eslint-disable-next-line */
       display: block;
       position: fixed;
       bottom: 5%;

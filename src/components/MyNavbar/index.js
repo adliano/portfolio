@@ -1,11 +1,13 @@
 import React from 'react'
-import { Dropdown, Image, Nav, Navbar, } from 'react-bootstrap'
+import { Dropdown, Image, Nav, Navbar, OverlayTrigger, } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { CustomToggle } from '../CustomToggle'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import copy from 'clipboard-copy'
+
 import './style.css'
 
-export function MyNavbar () {
+export function MyNavbar() {
   return (
     <>
       <Navbar
@@ -45,20 +47,22 @@ export function MyNavbar () {
                 <span className='text-light'>Contact</span>
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                {/* <Dropdown.Item href='https://www.linkedin.com/in/adliano/'>
-                  <FontAwesomeIcon icon={['fab', 'linkedin']} /> Liknedin
-                </Dropdown.Item> */}
-                {/* <Dropdown.Item href='https://github.com/adliano'>
-                  <FontAwesomeIcon icon={['fab', 'github-square']} /> Github
-                </Dropdown.Item> */}
-                <Dropdown.Item>
-                  <FontAwesomeIcon icon={['fas', 'at']} /> adliano@me.com
-                </Dropdown.Item>
-                <Dropdown.Item>
+                <OverlayTrigger
+                  placement='left'
+                  overlay={<div className='text-light mr-3'>click to copy</div>}>
+                     <Dropdown.Item onClick={() => copy('adliano@me.com')}>
+                       <FontAwesomeIcon icon={['fas', 'at']} /> adliano@me.com
+                    </Dropdown.Item>
+                </OverlayTrigger>
+                <OverlayTrigger
+                placement='left'
+                overlay={<div className='text-light mr-3'>click to copy</div>}>
+                <Dropdown.Item onClick={() => copy('+1(510)750-0013')}>
                   <FontAwesomeIcon icon={['fas', 'phone-square-alt']} />
                   (510)750-0013
                 </Dropdown.Item>
-                <Dropdown.Item>
+                </OverlayTrigger>
+                <Dropdown.Item href='https://drive.google.com/file/d/18TkYIXYUsY2scnUlwJTFY0YEErulBZcN/view?ths=true' >
                   <FontAwesomeIcon icon={['fas', 'file-download']} /> Resume
                 </Dropdown.Item>
               </Dropdown.Menu>
@@ -69,3 +73,18 @@ export function MyNavbar () {
     </>
   )
 }
+
+/*
+<OverlayTrigger
+      placement='left'
+      overlay={
+        <Tooltip className='text-light'>
+          Tooltip on <strong>left</strong>.
+        </Tooltip>
+      }
+    >
+    <Dropdown.Item onClick={() => copy('adliano@me.com')}>
+                  <FontAwesomeIcon icon={['fas', 'at']} /> adliano@me.com
+                </Dropdown.Item>
+    </OverlayTrigger>
+*/
