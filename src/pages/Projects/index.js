@@ -19,9 +19,7 @@ export function Projects () {
               <Card.Body>
                 <Card.Title>90's Music Word Guess</Card.Title>
                 <Card.Text>
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Try to guess the Band
                 </Card.Text>
               </Card.Body>
             </Card>
