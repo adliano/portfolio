@@ -1,118 +1,102 @@
 import React from 'react'
-import { Card, CardColumns, Container, Jumbotron } from 'react-bootstrap'
-import { Bounce, Zoom } from 'react-reveal'
+import { Col, Container, Jumbotron, Row } from 'react-bootstrap'
+import { Zoom } from 'react-reveal'
+import { ProjectCard } from '../../components/ProjectCard'
 import './style.css'
 
 export function Projects () {
   return (
-    <>
+    <div>
       <Jumbotron className='bg-transparent text-light' fluid>
-        <h1 className='text-center'>List of Projects</h1>
+        <h1 className='text-center header'>List of Projects</h1>
       </Jumbotron>
-      <Container className='px-5 mx-auto' >
-        <CardColumns className='mx-auto px-5 text-center' >
-          {/* <Bounce top cascade> */}
+      <Container>
+        <Row className='mx-auto'>
           <Zoom bottom cascade>
-            {/* ************************************* */}
-            {/* ************** 90's Game ************ */}
-            {/* ************************************* */}
-            <Card>
-              <Card.Img className='p-1' variant='top' src='/assets/images/90sgame.gif' />
-              <Card.Body>
-                <Card.Title>90's Music Word Guess</Card.Title>
-                <Card.Text>
-                  Try to guess the Band
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            {/* ************************************* */}
-            {/* ************** RPG Game ************* */}
-            {/* ************************************* */}
-            <Card className='p-0'>
-              <Card.Img className='p-1' variant='top' src='/assets/images/rpg.gif' />
-              <Card.Body>
-                <Card.Title>RPG Game</Card.Title>
-                <Card.Text>
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            {/* ************************************* */}
-            {/* ************ Smart Trivia *********** */}
-            {/* ************************************* */}
-            <Card>
-              <Card.Img className='p-1' variant='top' src='/assets/images/smart_trivia.gif' />
-              <Card.Body>
-                <Card.Title >Trivia Smart</Card.Title>
-                <Card.Text>
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            {/* ************************************* */}
-            {/* ************* Giftastic ************* */}
-            {/* ************************************* */}
-            <Card>
-              <Card.Img className='p-1' variant='top' src='http://www.alves.tech/assets/images/giftastic.jpg' />
-              <Card.Body>
-                <Card.Title>Giftastic</Card.Title>
-                <Card.Text>
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            {/* ************************************* */}
-            {/* ************* Bamazon ************* */}
-            {/* ************************************* */}
-            <Card>
-              <Card.Img className='p-1' variant='top' src='http://www.alves.tech/assets/images/bamazon.gif' />
-              <Card.Body>
-                <Card.Title>Bamazon</Card.Title>
-                <Card.Text>
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            {/* ************************************* */}
-            {/* *********** Friend Finder *********** */}
-            {/* ************************************* */}
-            <Card>
-              <Card.Img className='p-1' variant='top' src='http://www.alves.tech/assets/images/friendFinder.png' />
-              <Card.Body>
-                <Card.Title>Friend Finder</Card.Title>
-                <Card.Text>
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            {/* ************************************* */}
-            {/* ************** Petinder ************* */}
-            {/* ************************************* */}
-            <Card>
-              <Card.Img className='p-1' variant='top' src='http://www.alves.tech/assets/images/petinder.png' />
-              <Card.Body>
-                <Card.Title>Petinder</Card.Title>
-                <Card.Text>
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </Card.Text>
-              </Card.Body>
-            </Card>
+            <Col sm>
+              <ProjectCard image='assets/images/petinder.png' title='The Petinder' github='https://github.com/adliano/thepetinder_react' webpage='http://www.thepetinder.com'>
+              Animals and Universal Consciouness.
+              Helping Animals to get a new home
+              </ProjectCard>
+            </Col>
+            <Col sm>
+              <ProjectCard
+                image='assets/images/90s.png'
+                title="90's Word Guessing"
+                github='https://github.com/adliano/WordGuessGame'
+                webpage='https://adliano.github.io/WordGuessGame/'
+              >
+                A Word Guess game with some nice 90's dance musics
+              </ProjectCard>
+            </Col>
+            <Col sm>
+              <ProjectCard
+                image='assets/images/sw.png'
+                title='RPG Game'
+                github='https://github.com/adliano/unit-4-game'
+                webpage='https://adliano.github.io/unit-4-game/'
+              >
+                A RPG Game with some Start Wars characters
+                <br />
+                <strong>"May the Source Be with You"</strong>
+              </ProjectCard>
+            </Col>
+            <Col sm>
+              <ProjectCard
+                image='assets/images/gif.png'
+                title='Giftastic'
+                github='https://github.com/adliano/GifTastic'
+                webpage='https://adliano.github.io/GifTastic/'
+              >
+                A Simple Search for any GIF
+              </ProjectCard>
+            </Col>
+            <Col sm>
+              <ProjectCard
+                image='assets/images/smartTrivia.png'
+                title='Smart Trivia'
+                github='https://github.com/adliano/TriviaSmart'
+                webpage='https://adliano.github.io/TriviaSmart/'
+              >
+                Smart Trivia, A trivia Game to test your knowledge
+              </ProjectCard>
+            </Col>
+            <Col sm>
+              <ProjectCard
+                image='assets/images/bamazon.png'
+                title='Bamazon'
+                github='https://github.com/adliano/Bamazon'
+              >
+                A nice Mock CLI Application that manages product sales
+              </ProjectCard>
+            </Col>
+            <Col sm />
+            <Col sm>
+              <ProjectCard
+                image='assets/images/ff.png'
+                title='Friend Finder'
+                github='https://github.com/adliano/FriendFinder'
+                webpage='https://github.com/adliano/FriendFinder'
+              >
+                Because we want help you to find a friend
+              </ProjectCard>
+            </Col>
           </Zoom>
-          {/* </Bounce> */}
-        </CardColumns>
+        </Row>
       </Container>
-    </>
+    </div>
   )
 }
+
+/*
+<Col sm>
+              <ProjectCard
+              image=''
+              title=''
+              github=''
+              webpage=''
+              >
+                Text
+              </ProjectCard>
+            </Col>
+*/

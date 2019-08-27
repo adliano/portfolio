@@ -1,17 +1,8 @@
-.bgImage {
-    height: 100%;
-    width: 100%;
-    min-width: 386px;
-    position: fixed;
-    margin: auto;
-    background-image: url("/assets/images/sticker.png");
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: auto;
-}
-
 .header {
     font-family: 'Permanent Marker', cursive;
-    font-size: 1.5em;
+    font-size: 1.8em;
+}
+
+.my-img {
+    opacity: 0.4;
 }
