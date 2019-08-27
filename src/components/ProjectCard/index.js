@@ -1,4 +1,6 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import './style.css'
 
 export function ProjectCard (props) {
@@ -7,14 +9,21 @@ export function ProjectCard (props) {
       <div className='project_card'>
         <div className='face face1'>
           <div className='content'>
-            <img src='assets/images/90s.png' alt={props.alt} />
-            <h4>Card Title</h4>
+            <img src={props.image} alt='project media' />
+            <h4>{props.title}</h4>
           </div>
         </div>
         <div className='face face2'>
           <div className='content'>
-            <p>card text in here about project</p>
-            <a href='/'>github</a>
+            <p>{props.children}</p>
+            <a href={props.github}>
+              <FontAwesomeIcon icon={['fab', 'github-alt']} /> github
+            </a>
+            {props.webpage ? (
+              <a href={props.webpage}>
+                <FontAwesomeIcon icon={['fas', 'globe-americas']} /> webpage
+              </a>
+            ) : ('')}
           </div>
         </div>
       </div>
