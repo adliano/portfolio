@@ -19,7 +19,7 @@ export function Home () {
           </Container>
         </div>
       </Zoom>
-      <Image src='/assets/images/sticker.png' className='mx-auto w-25 d-block'/>
+      <Image src='/assets/images/sticker.png' className='mx-auto w-25 d-block my-img'/>
     </>
   )
 }
