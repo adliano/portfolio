@@ -8,7 +8,7 @@ export function Projects () {
   return (
     <div>
       <Jumbotron className='bg-transparent text-light' fluid>
-        <h1 className='text-center'>List of Projects</h1>
+        <h1 className='text-center header'>List of Projects</h1>
       </Jumbotron>
       <Container>
         <Row className='mx-auto'>
