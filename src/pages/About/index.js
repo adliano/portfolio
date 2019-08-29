@@ -10,7 +10,7 @@ export function About () {
       <Container className='m-5 mx-auto'>
         <div className='m-5 mx-auto box'>
           <Fade duration={500}>
-            <Image src='/assets/images/screen_about.png' fluid />
+            <Image src='/assets/images/screen_about.png' className='laptop' fluid />
           </Fade>
           <div className='text-white greeting bg-dark px-3 pt-3'>
             <Typing startDelay={1000} speed={5}>
