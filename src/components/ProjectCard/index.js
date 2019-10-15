@@ -4,26 +4,32 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './style.css'
 
 export function ProjectCard (props) {
+  const { image, title, children, github, webpage, technologiesUsed } = props
   return (
     <div className='container'>
       <div className='project_card'>
         <div className='face face1'>
           <div className='content'>
-            <img src={props.image} alt='project media' />
-            <h4>{props.title}</h4>
+            <img src={image} alt='project media' />
+            <h4>{title}</h4>
           </div>
         </div>
         <div className='face face2'>
           <div className='content'>
-            <p>{props.children}</p>
-            <a href={props.github}>
+            <p>{children}</p>
+            <a href={github}>
               <FontAwesomeIcon icon={['fab', 'github-alt']} /> github
             </a>
-            {props.webpage ? (
-              <a href={props.webpage}>
+            {webpage ? (
+              <a href={webpage}>
                 <FontAwesomeIcon icon={['fas', 'globe-americas']} /> webpage
               </a>
-            ) : ('')}
+            ) : (
+              ''
+            )}
+            {/* {props.technologiesUsed.map((item, index) => {
+              return <a href='www.google.com'>Test index {index}</a>
+            })} */}
           </div>
         </div>
       </div>
