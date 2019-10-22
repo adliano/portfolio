@@ -81,6 +81,11 @@ export function Projects () {
                 Because we want help you to find a friend
               </ProjectCard>
             </Col>
+            <Col sm>
+              <ProjectCard image='assets/images/GBS.png' title='Books Search' github='https://github.com/adliano/GoogleBooksSearch' webpage='https://gbshearch.herokuapp.com/'>
+              An easy way to save your favorites books
+              </ProjectCard>
+            </Col>
           </Zoom>
         </Row>
       </Container>
