@@ -86,6 +86,16 @@ export function Projects () {
               An easy way to save your favorites books
               </ProjectCard>
             </Col>
+            <Col sm>
+              <ProjectCard
+                image='assets/images/train.png'
+                title='Train Scheduler'
+                github='https://github.com/adliano/TrainScheduler'
+                webpage='https://adliano.github.io/TrainScheduler/'
+              >
+                Never Miss you train again
+              </ProjectCard>
+            </Col>
           </Zoom>
         </Row>
       </Container>
