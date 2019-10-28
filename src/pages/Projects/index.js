@@ -96,6 +96,16 @@ export function Projects () {
                 Never Miss you train again
               </ProjectCard>
             </Col>
+            <Col sm>
+              <ProjectCard
+              image='assets/images/paverOrderLogo.png'
+              title='Paver Order'
+              github='https://github.com/adliano/PaverOrder'
+              webpage='https://adliano.github.io/PaverOrder/'
+              >
+                An easy way to order what you need.
+              </ProjectCard>
+            </Col>
           </Zoom>
         </Row>
       </Container>
